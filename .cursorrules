@@ -1,0 +1,158 @@
+# Regras do Projeto - 4JobSoftware Landing Page
+
+## Contexto do Projeto
+Landing page moderna e responsiva para a 4JobSoftware, uma engenharia de software especializada em sistemas customizados e soluções próprias.
+
+## Stack Tecnológica
+
+### Frontend
+- **Framework:** Next.js 15 (App Router)
+- **Linguagem:** TypeScript
+- **Estilização:** CSS Modules (mobile-first)
+- **Build Tool:** Next.js built-in
+
+## Princípios de Design
+
+### Mobile-First
+- Sempre desenvolver pensando primeiro em dispositivos móveis
+- Breakpoints: sm (640px), md (768px), lg (1024px), xl (1280px)
+- Touch targets mínimos de 44x44px
+- Performance otimizada para conexões móveis
+
+### Design Moderno
+- Paleta de cores profissional (azul como primária)
+- Tipografia clara e legível
+- Espaçamento consistente (múltiplos de 4px)
+- Cards com efeitos hover suaves
+- Gradientes sutis e sombras modernas
+- Suporte automático a dark mode
+
+## Estrutura e Organização
+
+### Diretórios Principais
+- `app/` - Páginas e layouts (Next.js App Router)
+- `public/imagens/` - Logos e ícones estáticos
+- `app/globals.css` - Variáveis CSS e estilos globais
+- `app/page.module.css` - Estilos modulares da página
+
+### Convenções de Código
+- Usar TypeScript com tipagem estrita
+- Componentes funcionais com React hooks
+- CSS Modules para estilos (evitar CSS global quando possível)
+- Nomes de classes em camelCase para CSS Modules
+- Sempre usar Image do Next.js para otimização
+
+## Funcionalidades Principais
+
+### 1. Header/Navigation
+- Logo da empresa
+- Botão CTA "Fale Conosco" (WhatsApp)
+- Sticky header com backdrop blur
+
+### 2. Hero Section
+- Título impactante com gradiente
+- Descrição clara dos serviços
+- Botões de ação (WhatsApp e scroll para serviços)
+
+### 3. Serviços Section
+- Grid responsivo de cards
+- 4 serviços principais destacados
+- Ícones e descrições claras
+
+### 4. Sobre Section
+- Informações sobre a empresa
+- Texto descritivo e profissional
+
+### 5. Contato Section
+- Cards de contato (WhatsApp e E-mail)
+- Links diretos para comunicação
+- Design destacado e acessível
+
+### 6. Footer
+- Logo e informações de copyright
+- Links rápidos para navegação
+
+## Integrações
+
+### WhatsApp
+- Número: (65) 98133-8458
+- Link formatado: `https://wa.me/5565981338458?text=...`
+- Mensagem padrão pré-preenchida
+- Todos os botões devem redirecionar para WhatsApp
+
+### E-mail
+- Contato: forjobsoftware@hotmail.com
+- Link mailto configurado
+
+## Performance e SEO
+
+### Otimizações Obrigatórias
+- Images com `priority` para above-the-fold
+- Lazy loading para imagens abaixo da dobra
+- Metadata completo no layout.tsx
+- Alt text em todas as imagens
+- Semantic HTML
+
+### Métricas Esperadas
+- Lighthouse Score: ≥ 90
+- LCP: < 2.5s
+- FID: < 100ms
+- CLS: < 0.1
+
+## Acessibilidade
+
+### Requisitos
+- Contraste adequado (WCAG AA mínimo)
+- Navegação por teclado funcional
+- Textos alternativos descritivos
+- ARIA labels quando necessário
+- Foco visível em elementos interativos
+
+## Responsividade
+
+### Breakpoints
+- Mobile: < 640px (base)
+- Tablet: 640px - 1023px
+- Desktop: ≥ 1024px
+- Large Desktop: ≥ 1280px
+
+### Testes Obrigatórios
+- iPhone SE (375px)
+- iPhone 12/13/14 (390px)
+- iPad (768px)
+- Desktop (1920px)
+
+## Manutenção
+
+### Atualizações Comuns
+- Informações de contato
+- Textos e descrições
+- Novos serviços
+- Logos e imagens
+
+### Versionamento
+- Sempre documentar mudanças
+- Manter README.md atualizado
+- Commits descritivos
+
+## Deploy
+
+### Plataformas Recomendadas
+- Vercel (recomendado - otimizado para Next.js)
+- Netlify
+- AWS Amplify
+
+### Variáveis de Ambiente
+- Nenhuma variável sensível necessária
+- Configurações hardcoded são aceitáveis para landing page simples
+
+## Regras Específicas
+
+1. **SEMPRE** usar mobile-first no CSS
+2. **SEMPRE** testar em dispositivos móveis primeiro
+3. **NUNCA** commitar credenciais ou informações sensíveis
+4. **SEMPRE** otimizar imagens antes de adicionar
+5. **SEMPRE** manter consistência visual
+6. **SEMPRE** verificar acessibilidade
+7. **SEMPRE** testar links do WhatsApp antes de deploy
+
