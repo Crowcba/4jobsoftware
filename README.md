@@ -106,5 +106,5 @@ A aplicação pode ser deployada em:
 
 ---
 
-Desenvolvido com ❤️ para 4JobSoftware
+Desenvolvido com ❤️ por 4JobSoftware
 
